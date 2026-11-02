@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171426">
+  <title>Prawaha Star</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #100e19;
+      color: white;
+    }
+    header {
+      padding: 18px;
+      background: #1c1830;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    .logo { font-size: 23px; font-weight: bold; }
+    .logo span { color: #b68aff; }
+    main { padding: 18px; max-width: 650px; margin: auto; }
+    .hero {
+      padding: 28px 20px;
+      border-radius: 20px;
+      background: linear-gradient(135deg,#6336bd,#251b47);
+    }
+    .hero h1 { font-size: 32px; }
+    button {
+      border: 0;
+      border-radius: 12px;
+      padding: 13px 18px;
+      background: #9562ed;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .section { margin-top: 28px; }
+    .video-card {
+      margin-top: 15px;
+      background: #211d30;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    video {
+      display: block;
+      width: 100%;
+      background: black;
+      max-height: 480px;
+    }
+    .video-info { padding: 14px; }
+    nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-around;
+      padding: 16px 5px;
+      background: #201b30;
+    }
+    nav a { color: white; text-decoration: none; }
+    footer {
+      padding: 80px 15px 85px;
+      color: #bbb;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">PRAWAHA <span>STAR</span></div>
+    <button onclick="document.getElementById('login').scrollIntoView()">Login</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Create. Share. Connect.</h1>
+      <p>Welcome to Prawaha Star – your video community.</p>
+      <button onclick="document.getElementById('feed').scrollIntoView()">Explore Videos</button>
+    </section>
+
+    <section class="section" id="feed">
+      <h2>Discover Videos 🎬</h2>
+      <div id="videos"></div>
+      <p id="empty">Your video feed is ready. Videos will appear here when published.</p>
+    </section>
+
+    <section class="section" id="login">
+      <h2>Welcome to Prawaha Star</h2>
+      <p>Login and signup will be connected in the next step.</p>
+    </section>
+  </main>
+
+  <footer>
+    <h3>About Prawaha Star</h3>
+    <p>Built by Prashant</p>
+    <p>Contact: 9714289048</p>
+    <p>Email: 07prashuu@gmail.com</p>
+    <p>© 2026 Prawaha Star</p>
+  </footer>
+
+  <nav>
+    <a href="#">🏠 Home</a>
+    <a href="#feed">🎬 Feed</a>
+    <a href="#login">👤 Profile</a>
+  </nav>
+</body>
+</html>
